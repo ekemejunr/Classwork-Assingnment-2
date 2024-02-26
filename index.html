@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class-Work</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        section {
+            display: flex;
+            /* align-items: center; */
+            
+        }
+        .sub-main2 {
+            width: 15%;
+            height: 100vh;
+            background-color:#202123;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            
+           
+        }
+        
+       .down {
+        margin-left: 10px;
+       }
+
+        
+        .oke {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            
+        }
+        img {
+            height: 50px;
+            width: 50px;
+        }
+        .jke {
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           padding-bottom: 30px;
+        }
+       
+    
+        .junr {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .lke {
+            width: 150px;
+            height: 35px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+        }
+       .icon {
+        height: 35px;
+        background-color: black;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            margin-right: 30px;
+            margin-top: 10px;
+       }
+       p {
+      font-size: small;
+       }
+       .sub-main {
+            width: 85%;
+            height: 100vh;
+            background-color: #343541;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+           
+        }
+        .big {
+            width: 500px;
+            height: 80px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 5px;
+            padding-right: 40px;
+        }
+        .sub-main h1 {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+
+        }
+        .bolt {
+            height: 70px;
+            width: 130px;
+            background-color: #343541;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            left: 0px;
+            /* margin-right: 100px; */
+
+        }
+        /* .everything {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        } */
+        .up {
+           
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 7px;
+        }
+        .box {
+            width: 300px;
+            height: 80px;
+            border: 1px solid white;
+            border-radius: 10px;
+            text-align: center;
+            padding-left: 50px;
+            
+            
+        }
+        .box1{
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .box2 {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .box3 {
+            display: flex;
+            align-items: center;
+            color: white;
+            
+        }
+        
+        .box4 {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .ife {
+            height: 90px;
+            width: 700px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: #32333a;
+            border: 1px solid white;
+            padding-left: 15px;
+
+            
+        }
+        .ore {
+            position: relative;
+            display: flex;
+        }
+        .arrow-box {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin-right: 500px; */
+            top: 0;
+            right: 0;
+            margin-top: 30px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        @media screen and (max-width: 768px) {
+                .sub-main2 {
+                    width: 100%;
+                    height: 80px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 1000;
+                    background-color: #202123;
+                    color: white;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                }
+                
+                .sub-main {
+                    width: 100%;
+                    height: calc(100vh - 80px);
+                    background-color: #343541;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                
+                .ham-menu {
+                    display: block;
+                    cursor: pointer;
+                    color: white;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    font-size: 24px;
+                    margin-right: 10px;
+                }
+                
+                nav {
+                    display: none;
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    width: 100%;
+                    background-color: #202123;
+                    color: white;
+                    padding: 10px;
+                    box-sizing: border-box;
+                }
+                
+                nav.show {
+                    display: block;
+                }
+                
+                .box {
+                    width: 100%;
+                    height: 60px;
+                    border: none;
+                    border-radius: 0;
+                    text-align: left;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                }
+                
+                .big {
+                    width: 100%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="sub-main2">
+            <div class="down">
+            <div class="junr">
+                <button class="lke">+New chat</button>
+                <button class="icon"><i class="fa-solid fa-columns"></i></button>
+              </div>
+              <p>Today</p>
+              <div>
+            <i class="fa-solid fa-flag"></i>
+            New chat
+        </div> <br>
+            <div>
+                <i class="fa-solid fa-flag"></i>
+                Use Font awesome
+            </div> <br>
+           <p>Yesterday</p>
+           <div>
+            <i class="fa-solid fa-flag"></i>
+            SCad fashion week and your mama
+           </div>
+           </div>
+           <div class="constant">
+            <hr> <br>
+            <div> 
+                <i class="fa-solid fa-star"></i>
+                Upgrade
+            </div> <br>
+            <div class="jke">
+            <div class="oke"><img src="pexels-collis-3031396.jpg" alt="">
+           </div>
+           Ifechukwu <i class="fa-solid fa-ellipsis"></i>
+            </div>
+           </div>
+        </div>
+        <div class="sub-main">
+        <!-- <div class="everything"> -->
+        <div class="unt">
+
+        <div class="big">
+        <div class="bolt">
+           <i class="fa-solid fa-bolt"></i> GPT-9.5</div>
+        <div>
+            <i class="fa-solid fa-flask"></i> Alpha</div>
+        <div>
+            <i class="fa-solid fa-star"></i> GPT-4</div>
+           <i class="fa-solid fa-lock"></i>
+        </div>
+        </div> <br>
+        <h1>Chat GPT</h1>
+        <div class="up">
+        <div class="box box1">Tell me a fun fact like<br>
+         about the roman empire</div>
+        <div class="box box2">Write a SOL Query <br>
+        thats about your self </div>
+        <div class="box box3">Show me a code snippet <br>
+        of a website sticky header</div>
+        <div class="box box4">Suggest some names that are nice or cool ,<br> 
+        for my cafe-by-day, bar-by name-by</div>
+        <!-- <input class="ife" type="text" placeholder="send a message"> -->
+        </div>
+        <div class="ore">
+        <input class="ife" type="text" placeholder="send a message">
+        <div class="arrow-box">
+        <p>></p>
+        </div>
+        </div>
+        <!-- </div> -->
+    </div>
+    </section>
+    <script>
+        document.getElementById('.ham-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
