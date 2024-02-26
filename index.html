@@ -195,74 +195,50 @@
             font-weight: bolder;
         }
 
-        @media screen and (max-width: 768px) {
-                .sub-main2 {
-                    width: 100%;
-                    height: 80px;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    z-index: 1000;
-                    background-color: #202123;
-                    color: white;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 0 10px;
-                    box-sizing: border-box;
-                }
-                
-                .sub-main {
-                    width: 100%;
-                    height: calc(100vh - 80px);
-                    background-color: #343541;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                }
-                
-                .ham-menu {
-                    display: block;
-                    cursor: pointer;
-                    color: white;
-                    background-color: transparent;
-                    border: none;
-                    outline: none;
-                    font-size: 24px;
-                    margin-right: 10px;
-                }
-                
-                nav {
-                    display: none;
-                    position: absolute;
-                    top: 80px;
-                    left: 0;
-                    width: 100%;
-                    background-color: #202123;
-                    color: white;
-                    padding: 10px;
-                    box-sizing: border-box;
-                }
-                
-                nav.show {
-                    display: block;
-                }
-                
-                .box {
-                    width: 100%;
-                    height: 60px;
-                    border: none;
-                    border-radius: 0;
-                    text-align: left;
-                    padding-left: 10px;
-                    box-sizing: border-box;
-                }
-                
-                .big {
-                    width: 100%;
-                }
-            }
+      /* Existing CSS styles... */
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Change layout to vertical stack */
+    }
+
+    .sub-main2 {
+        width: 100%; /* Take full width */
+        height: auto; /* Adjust height automatically */
+        padding: 20px; /* Add some padding */
+    }
+
+    .sub-main {
+        width: 100%; /* Take full width */
+        height: auto; /* Adjust height automatically */
+        padding: 20px; /* Add some padding */
+    }
+
+    .big {
+        width: 100%; /* Take full width */
+        max-width: none; /* Remove max-width constraint */
+    }
+
+    .up {
+        grid-template-columns: 1fr; /* Change to single column layout */
+    }
+
+    .box {
+        width: 100%; /* Take full width */
+        margin-bottom: 10px; /* Add some bottom margin */
+    }
+
+    .ife {
+        width: calc(100% - 60px); /* Adjust input width */
+    }
+
+    .arrow-box {
+        margin-top: 10px; /* Adjust margin */
+        margin-left: auto; /* Move to right */
+    }
+}
+
     </style>
 </head>
 <body>
